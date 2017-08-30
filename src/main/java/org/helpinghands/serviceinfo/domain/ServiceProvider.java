@@ -1,5 +1,11 @@
 package org.helpinghands.serviceinfo.domain;
 
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
+
+@Entity
+@Table( name = "ServiceProvider")
 public class ServiceProvider {
     private int providerID;
     private String name;
@@ -9,22 +15,91 @@ public class ServiceProvider {
     private String city;
     private State state;
     private int zip;
+    private List<Service> servicesProvided = new ArrayList<>();
 
     public ServiceProvider() {
     }
 
-    @Override
-    public String toString() {
-        return "Service{" +
-                "providerID=" + providerID +
-                ", name='" + name + '\'' +
-                ", website='" + website + '\'' +
-                ", phone='" + phone + '\'' +
-                ", address='" + address + '\'' +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", zip=" + zip +
-                '}';
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public int getProviderID() {
+        return providerID;
+    }
+
+    public void setProviderID(int providerID) {
+        this.providerID = providerID;
+    }
+
+    @Column(name = "ProviderName")
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Column(name = "Website")
+    public String getWebsite() {
+        return website;
+    }
+
+    public void setWebsite(String website) {
+        this.website = website;
+    }
+
+    @Column(name = "Phone")
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    @Column(name = "Address")
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    @Column(name = "City")
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    @Column(name = "State")
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    @Column(name = "Zip")
+    public int getZip() {
+        return zip;
+    }
+
+    public void setZip(int zip) {
+        this.zip = zip;
+    }
+
+    @OneToMany(mappedBy = "ServiceProvider")
+    public List<Service> getServicesProvided() {
+        return servicesProvided;
+    }
+
+    public void setServicesProvided(List<Service> servicesProvided) {
+        this.servicesProvided = servicesProvided;
     }
 
     @Override
@@ -57,68 +132,17 @@ public class ServiceProvider {
         return result;
     }
 
-    public int getProviderID() {
-        return providerID;
+    @Override
+    public String toString() {
+        return "Service{" +
+                "providerID=" + providerID +
+                ", name='" + name + '\'' +
+                ", website='" + website + '\'' +
+                ", phone='" + phone + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip=" + zip +
+                '}';
     }
-
-    public void setProviderID(int providerID) {
-        this.providerID = providerID;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getWebsite() {
-        return website;
-    }
-
-    public void setWebsite(String website) {
-        this.website = website;
-    }
-
-    public String getPhone() {
-        return phone;
-    }
-
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public State getState() {
-        return state;
-    }
-
-    public void setState(State state) {
-        this.state = state;
-    }
-
-    public int getZip() {
-        return zip;
-    }
-
-    public void setZip(int zip) {
-        this.zip = zip;
-    }
-
 }

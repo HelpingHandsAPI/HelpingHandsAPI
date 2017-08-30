@@ -1,6 +1,6 @@
 package org.helpinghands.serviceinfo.domain;
 
-public enum SpecificServiceType {
+public enum TypeOfService {
     CHILDCARE,
     CLOTHING,
     FOOD,
@@ -26,7 +26,7 @@ public enum SpecificServiceType {
 
     @Override
     public String toString() {
-        return "SpecificServiceType{" +
+        return "TypeOfService{" +
                 "specificServiceName='" + specificServiceName + '\'' +
                 "} " + super.toString();
     }

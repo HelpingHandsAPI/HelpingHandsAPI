@@ -15,10 +15,10 @@ public interface HHServiceProvider {
     //Get Service Provider by ID and services they provide
     ServiceProvider getServiceProviderById(int id);
 
-    //Get a list of Service Providers along with services they provide
+    //Get a list of Service Providers
     List<ServiceProvider> getServiceProviders();
 
-    //Get Service Provider list sorted by city, state, zip or name
+    //Get Service Provider list sorted by city, state, zip or name along with services provided
     List<ServiceProvider> sortByCity();
     List<ServiceProvider> sortByState();
     List<ServiceProvider> sortByZipCode();
