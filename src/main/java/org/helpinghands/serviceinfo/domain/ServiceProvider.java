@@ -7,21 +7,41 @@ import java.util.List;
 @Entity
 @Table( name = "ServiceProvider")
 public class ServiceProvider {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int providerID;
+
+    @Column(name = "ProviderName")
     private String name;
+
+    @Column(name = "Website")
     private String website;
+
+    @Column(name = "Phone")
     private String phone;
+
+    @Column(name = "Address")
     private String address;
+
+    @Column(name = "City")
     private String city;
+
+    @Column(name = "State")
     private State state;
+
+    @Column(name = "Zip")
     private int zip;
-    private List<Service> servicesProvided = new ArrayList<>();
+
+    @Column
+    @ElementCollection
+    @CollectionTable(
+            name="Service",
+            joinColumns=@JoinColumn(name="serviceID"))
+    private List<String> servicesProvided;
 
     public ServiceProvider() {
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getProviderID() {
         return providerID;
     }
@@ -30,7 +50,7 @@ public class ServiceProvider {
         this.providerID = providerID;
     }
 
-    @Column(name = "ProviderName")
+
     public String getName() {
         return name;
     }
@@ -39,7 +59,7 @@ public class ServiceProvider {
         this.name = name;
     }
 
-    @Column(name = "Website")
+
     public String getWebsite() {
         return website;
     }
@@ -48,7 +68,7 @@ public class ServiceProvider {
         this.website = website;
     }
 
-    @Column(name = "Phone")
+
     public String getPhone() {
         return phone;
     }
@@ -57,7 +77,7 @@ public class ServiceProvider {
         this.phone = phone;
     }
 
-    @Column(name = "Address")
+
     public String getAddress() {
         return address;
     }
@@ -66,7 +86,7 @@ public class ServiceProvider {
         this.address = address;
     }
 
-    @Column(name = "City")
+
     public String getCity() {
         return city;
     }
@@ -75,7 +95,7 @@ public class ServiceProvider {
         this.city = city;
     }
 
-    @Column(name = "State")
+
     public State getState() {
         return state;
     }
@@ -84,7 +104,7 @@ public class ServiceProvider {
         this.state = state;
     }
 
-    @Column(name = "Zip")
+
     public int getZip() {
         return zip;
     }
@@ -93,12 +113,13 @@ public class ServiceProvider {
         this.zip = zip;
     }
 
-    @OneToMany(mappedBy = "ServiceProvider")
-    public List<Service> getServicesProvided() {
+@OneToMany(targetEntity = Service.class, mappedBy = "serviceProvider",
+    cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    public List<String> getServicesProvided() {
         return servicesProvided;
     }
 
-    public void setServicesProvided(List<Service> servicesProvided) {
+    public void setServicesProvided(List<String> servicesProvided) {
         this.servicesProvided = servicesProvided;
     }
 

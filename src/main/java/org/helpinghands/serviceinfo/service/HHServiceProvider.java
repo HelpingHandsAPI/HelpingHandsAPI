@@ -3,8 +3,8 @@ package org.helpinghands.serviceinfo.service;
 import org.helpinghands.serviceinfo.domain.Service;
 import org.helpinghands.serviceinfo.domain.ServiceProvider;
 
-import java.util.ArrayList;
 import java.util.List;
+
 
 public interface HHServiceProvider {
     //Add, Update and delete Service Provider
@@ -24,11 +24,11 @@ public interface HHServiceProvider {
     List<ServiceProvider> sortByZipCode();
     List<ServiceProvider> sortByName();
 
-    //Get a list of Service Providers who provide a specific
-    ServiceProvider getSvcProvidersBySvcType(Service specificServiceType);
+    //Get a list of Service Providers who provide specific services
+    ServiceProvider getSvcProvidersByType(Service TypeOfService);
 
     //Get a list of Service Providers who provide services to
     //a specific group men, women etc.
-    List<Service> getServicesByGroupServed();
+    List<Service> getSvcByGroupServed();
 
 }

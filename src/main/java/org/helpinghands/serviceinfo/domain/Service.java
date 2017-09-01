@@ -3,26 +3,53 @@ package org.helpinghands.serviceinfo.domain;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table( name = "Service")
 public class Service {
-    private ServiceProvider svcProviderId;
-    private ServiceProvider svcProviderName;
+
+    private ServiceProvider serviceProvider;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int serviceID;
+
+    @Column(name = "ServiceName")
     private Enum TypeOfService;
+
+    @Column(name = "CommunityServed")
     private Enum TypeOfCommunity;
+
+    @Column(name = "FoodService")
     private Enum TypeOfFoodSvc;
+
+    @Column(name = "HealthService")
     private Enum TypeOfHealthSvc;
+
+    @Column(name = "TypeOfClothing")
     private Enum TypeOfClothingCloset;
-    private List<String> specificSvcCombo;
+
+    @Column(name = "Eligibility")
     private String eligibility;
+
+    @Column(name = "RequiredDocuments")
     private String reqDocuments;
+
+    @Column(name = "IntakeProcedure")
     private String intakeProcedure;
+
+    @Column(name = "TimePlace")
     private String timePlaceInfo;
+
+    @Column(name = "HoursOfOperation")
     private String facilityHoursOfOper;
+
+    @Column(name = "SpecialDetails")
     private String specialDetails;
+
+    @Column(name = "Fees")
     private boolean possibleFees;
 
 //    static final int COMMUNITY_SERVED_MEN = 1;
@@ -36,30 +63,14 @@ public class Service {
     public Service() {
     }
 
-    @JsonIgnore
-    @ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="providerID")
-    public ServiceProvider getSvcProviderId() {
-        return svcProviderId;
+    public ServiceProvider getServiceProvider() {
+        return serviceProvider;
     }
 
-    //@JsonIgnore
-    public void setSvcProviderId(ServiceProvider svcProviderId) {
-        this.svcProviderId = svcProviderId;
+    public void setServiceProvider(ServiceProvider serviceProvider) {
+        this.serviceProvider = serviceProvider;
     }
 
-    @Column(name = "ProviderName")
-    public ServiceProvider getSvcProviderName() {
-        return svcProviderName;
-    }
-
-    //@JsonIgnore
-    public void setSvcProviderName(ServiceProvider svcProviderName) {
-        this.svcProviderName = svcProviderName;
-    }
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getServiceID() {
         return serviceID;
     }
@@ -68,7 +79,6 @@ public class Service {
         this.serviceID = serviceID;
     }
 
-    @Column(name = "ServiceName")
     public Enum getTypeOfService() {
         return TypeOfService;
     }
@@ -77,7 +87,6 @@ public class Service {
         TypeOfService = typeOfService;
     }
 
-    @Column(name = "CommunityServed")
     public Enum getTypeOfCommunity() {
         return TypeOfCommunity;
     }
@@ -86,7 +95,6 @@ public class Service {
         TypeOfCommunity = typeOfCommunity;
     }
 
-    @Column(name = "FoodService")
     public Enum getTypeOfFoodSvc() {
         return TypeOfFoodSvc;
     }
@@ -95,7 +103,6 @@ public class Service {
         TypeOfFoodSvc = typeOfFoodSvc;
     }
 
-    @Column(name = "HealthService")
     public Enum getTypeOfHealthSvc() {
         return TypeOfHealthSvc;
     }
@@ -104,7 +111,6 @@ public class Service {
         TypeOfHealthSvc = typeOfHealthSvc;
     }
 
-    @Column(name = "TypeOfClothing")
     public Enum getTypeOfClothingCloset() {
         return TypeOfClothingCloset;
     }
@@ -113,18 +119,6 @@ public class Service {
         TypeOfClothingCloset = typeOfClothingCloset;
     }
 
-//    @JsonIgnore
-//    @ManyToOne(fetch=FetchType.LAZY)
-//    @JoinColumn(name="providerID")
-//    public List<String> getSpecificSvcCombo() {
-//        return specificSvcCombo;
-//    }
-//
-//    public void setSpecificSvcCombo(List<String> specificSvcCombo) {
-//        this.specificSvcCombo = specificSvcCombo;
-//    }
-
-    @Column(name = "Eligibility")
     public String getEligibility() {
         return eligibility;
     }
@@ -133,7 +127,6 @@ public class Service {
         this.eligibility = eligibility;
     }
 
-    @Column(name = "RequiredDocuments")
     public String getReqDocuments() {
         return reqDocuments;
     }
@@ -142,7 +135,6 @@ public class Service {
         this.reqDocuments = reqDocuments;
     }
 
-    @Column(name = "IntakeProcedure")
     public String getIntakeProcedure() {
         return intakeProcedure;
     }
@@ -151,7 +143,6 @@ public class Service {
         this.intakeProcedure = intakeProcedure;
     }
 
-    @Column(name = "TimePlace")
     public String getTimePlaceInfo() {
         return timePlaceInfo;
     }
@@ -160,7 +151,6 @@ public class Service {
         this.timePlaceInfo = timePlaceInfo;
     }
 
-    @Column(name = "HoursOfOperation")
     public String getFacilityHoursOfOper() {
         return facilityHoursOfOper;
     }
@@ -169,7 +159,6 @@ public class Service {
         this.facilityHoursOfOper = facilityHoursOfOper;
     }
 
-    @Column(name = "SpecialDetails")
     public String getSpecialDetails() {
         return specialDetails;
     }
@@ -178,7 +167,6 @@ public class Service {
         this.specialDetails = specialDetails;
     }
 
-    @Column(name = "Fees")
     public boolean isPossibleFees() {
         return possibleFees;
     }
@@ -191,15 +179,12 @@ public class Service {
     @Override
     public String toString() {
         return "Service{" +
-                "svcProviderId=" + svcProviderId +
-                "svcProviderName=" + svcProviderName +
                 ", serviceID=" + serviceID +
                 ", TypeOfService=" + TypeOfService +
                 ", TypeOfCommunity=" + TypeOfCommunity +
                 ", TypeOfFoodSvc=" + TypeOfFoodSvc +
                 ", TypeOfHealthSvc=" + TypeOfHealthSvc +
                 ", TypeOfClothingCloset=" + TypeOfClothingCloset +
-//                ", specificSvcCombo=" + specificSvcCombo +
                 ", eligibility=" + eligibility +
                 ", reqDocuments=" + reqDocuments +
                 ", intakeProcedure=" + intakeProcedure +
@@ -219,14 +204,12 @@ public class Service {
 
         if (getServiceID() != service.getServiceID()) return false;
         if (isPossibleFees() != service.isPossibleFees()) return false;
-        if (!getSvcProviderId().equals(service.getSvcProviderId())) return false;
+        if (!getServiceProvider().equals(service.getServiceProvider())) return false;
         if (!getTypeOfService().equals(service.getTypeOfService())) return false;
         if (!getTypeOfCommunity().equals(service.getTypeOfCommunity())) return false;
         if (!getTypeOfFoodSvc().equals(service.getTypeOfFoodSvc())) return false;
         if (!getTypeOfHealthSvc().equals(service.getTypeOfHealthSvc())) return false;
         if (!getTypeOfClothingCloset().equals(service.getTypeOfClothingCloset())) return false;
-//        if (getSpecificSvcCombo() != null ? !getSpecificSvcCombo().equals(service.getSpecificSvcCombo()) : service.getSpecificSvcCombo() != null)
-//            return false;
         if (!getEligibility().equals(service.getEligibility())) return false;
         if (!getReqDocuments().equals(service.getReqDocuments())) return false;
         if (!getIntakeProcedure().equals(service.getIntakeProcedure())) return false;
@@ -237,21 +220,20 @@ public class Service {
 
     @Override
     public int hashCode() {
-        int result = getSvcProviderId().hashCode();
-//        result = 31 * result + getServiceID();
-//        result = 31 * result + getTypeOfService().hashCode();
-//        result = 31 * result + getTypeOfCommunity().hashCode();
-//        result = 31 * result + getTypeOfFoodSvc().hashCode();
-//        result = 31 * result + getTypeOfHealthSvc().hashCode();
-//        result = 31 * result + getTypeOfClothingCloset().hashCode();
-//        result = 31 * result + (getSpecificSvcCombo() != null ? getSpecificSvcCombo().hashCode() : 0);
-//        result = 31 * result + getEligibility().hashCode();
-//        result = 31 * result + getReqDocuments().hashCode();
-//        result = 31 * result + getIntakeProcedure().hashCode();
-//        result = 31 * result + getTimePlaceInfo().hashCode();
-//        result = 31 * result + getFacilityHoursOfOper().hashCode();
-//        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
-//        result = 31 * result + (isPossibleFees() ? 1 : 0);
+        int result = getServiceProvider().hashCode();
+        result = 31 * result + getServiceID();
+        result = 31 * result + getTypeOfService().hashCode();
+        result = 31 * result + getTypeOfCommunity().hashCode();
+        result = 31 * result + getTypeOfFoodSvc().hashCode();
+        result = 31 * result + getTypeOfHealthSvc().hashCode();
+        result = 31 * result + getTypeOfClothingCloset().hashCode();
+        result = 31 * result + getEligibility().hashCode();
+        result = 31 * result + getReqDocuments().hashCode();
+        result = 31 * result + getIntakeProcedure().hashCode();
+        result = 31 * result + getTimePlaceInfo().hashCode();
+        result = 31 * result + getFacilityHoursOfOper().hashCode();
+        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
+        result = 31 * result + (isPossibleFees() ? 1 : 0);
         return result;
     }
 }
