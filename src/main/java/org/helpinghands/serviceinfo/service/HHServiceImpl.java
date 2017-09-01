@@ -1,4 +1,4 @@
-package org.helpinghands.serviceinfo.service;
-
-public class HHServiceImpl {
-}
+//package org.helpinghands.serviceinfo.service;
+//
+//public class HHServiceImpl {
+//}

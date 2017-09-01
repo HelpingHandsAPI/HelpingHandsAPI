@@ -1,8 +1,10 @@
 package org.helpinghands.serviceinfo.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.helpinghands.serviceinfo.domain.Service;
 import org.helpinghands.serviceinfo.domain.ServiceProvider;
-import org.helpinghands.serviceinfo.service.HHServiceProvider;
+//import org.helpinghands.serviceinfo.service.HHServiceProvider;
+import org.helpinghands.serviceinfo.repository.ServiceProviderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -19,8 +21,10 @@ import java.util.List;
 @RestController
 public class ServiceProviderController {
 
+//    @Autowired
+//    private HHServiceProvider serviceProviderSvc;
     @Autowired
-    private HHServiceProvider serviceProviderSvc;
+    ServiceProviderRepository serviceProviderRepository;
 
     //Java to Json
     private ObjectMapper objectMapper = new ObjectMapper();
@@ -31,7 +35,8 @@ public class ServiceProviderController {
     @PostMapping("/api/admin/org/createprofile")
     public String addServiceProvider(@RequestBody String json) throws IOException {
         ServiceProvider newServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
-        serviceProviderSvc.add(newServiceProvider);
+//        serviceProviderSvc.add(newServiceProvider);
+        serviceProviderRepository.save(newServiceProvider);
 
         return "New Service Provider";
     }
@@ -43,7 +48,8 @@ public class ServiceProviderController {
     public String updateServiceProvider(@PathVariable("providerID") Integer providerID, @RequestBody String json) throws IOException {
         ServiceProvider updateServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
         updateServiceProvider.setProviderID(providerID);
-        serviceProviderSvc.update(updateServiceProvider);
+//        serviceProviderSvc.update(updateServiceProvider);
+        serviceProviderRepository.save(updateServiceProvider);
 
         return "Updated Service Provider";
     }
@@ -53,20 +59,27 @@ public class ServiceProviderController {
      * @return A list of all Service Providers
      */
     @GetMapping("/api/org/serviceproviders")
-    public List<ServiceProvider> getServiceProviders(Model model) {return serviceProviderSvc.getServiceProviders();}
+    public List<ServiceProvider> getServiceProviders() {
+//        return serviceProviderSvc.getServiceProviders();
+       return serviceProviderRepository.findAll();
+    }
 
     /**
      *
      * @return A list of Service providers along with the services they provide
      */
     @GetMapping("/api/org/{providerID}")
-    public List<ServiceProvider> getProvidersServices(@PathVariable("svcProviderId") Integer svcProviderId){
-        return serviceProviderSvc.sortByName();
+    public List<Service> getProvidersServices(@PathVariable int providerId){
+        ServiceProvider serviceProvider = serviceProviderRepository.findOne(providerId);
+
+        return serviceProvider.getServicesProvided();
     }
 
     @DeleteMapping("/api/org/{providerID}/delete")
-    public String deleteProvider(@PathVariable("providerID") ServiceProvider providerID) {
-        serviceProviderSvc.delete(providerID);
+    public String deleteProvider(@PathVariable int providerID) {
+//        serviceProviderSvc.delete(providerID);
+
+        serviceProviderRepository.findOne(providerID);
         return "Service Provider deleted";
     }
 

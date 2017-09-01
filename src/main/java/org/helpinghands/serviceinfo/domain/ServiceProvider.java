@@ -32,14 +32,23 @@ public class ServiceProvider {
     @Column(name = "Zip")
     private int zip;
 
-    @Column
-    @ElementCollection
-    @CollectionTable(
-            name="Service",
-            joinColumns=@JoinColumn(name="serviceID"))
-    private List<String> servicesProvided;
+//    @Column
+//    @ElementCollection
+//    @CollectionTable(
+//            name="Service",
+//            joinColumns=@JoinColumn(name="serviceID"))
+    @OneToMany
+    private List<Service> servicesProvided;
 
     public ServiceProvider() {
+    }
+
+    public List<Service> getServicesProvided() {
+        return servicesProvided;
+    }
+
+    public void setServicesProvided(List<Service> servicesProvided) {
+        this.servicesProvided = servicesProvided;
     }
 
     public int getProviderID() {
@@ -113,15 +122,15 @@ public class ServiceProvider {
         this.zip = zip;
     }
 
-@OneToMany(targetEntity = Service.class, mappedBy = "serviceProvider",
-    cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    public List<String> getServicesProvided() {
-        return servicesProvided;
-    }
-
-    public void setServicesProvided(List<String> servicesProvided) {
-        this.servicesProvided = servicesProvided;
-    }
+//@OneToMany(targetEntity = Service.class, mappedBy = "serviceProvider",
+//    cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    public List<String> getServicesProvided() {
+//        return servicesProvided;
+//    }
+//
+//    public void setServicesProvided(List<String> servicesProvided) {
+//        this.servicesProvided = servicesProvided;
+//    }
 
     @Override
     public boolean equals(Object o) {

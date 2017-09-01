@@ -10,7 +10,7 @@ import java.util.List;
 @Table( name = "Service")
 public class Service {
 
-    private ServiceProvider serviceProvider;
+//    private ServiceProvider serviceProvider;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -63,13 +63,13 @@ public class Service {
     public Service() {
     }
 
-    public ServiceProvider getServiceProvider() {
-        return serviceProvider;
-    }
+//    public ServiceProvider getServiceProvider() {
+//        return serviceProvider;
+//    }
 
-    public void setServiceProvider(ServiceProvider serviceProvider) {
-        this.serviceProvider = serviceProvider;
-    }
+//    public void setServiceProvider(ServiceProvider serviceProvider) {
+//        this.serviceProvider = serviceProvider;
+//    }
 
     public int getServiceID() {
         return serviceID;
@@ -204,7 +204,7 @@ public class Service {
 
         if (getServiceID() != service.getServiceID()) return false;
         if (isPossibleFees() != service.isPossibleFees()) return false;
-        if (!getServiceProvider().equals(service.getServiceProvider())) return false;
+//        if (!getServiceProvider().equals(service.getServiceProvider())) return false;
         if (!getTypeOfService().equals(service.getTypeOfService())) return false;
         if (!getTypeOfCommunity().equals(service.getTypeOfCommunity())) return false;
         if (!getTypeOfFoodSvc().equals(service.getTypeOfFoodSvc())) return false;
@@ -218,22 +218,22 @@ public class Service {
         return getSpecialDetails() != null ? getSpecialDetails().equals(service.getSpecialDetails()) : service.getSpecialDetails() == null;
     }
 
-    @Override
-    public int hashCode() {
-        int result = getServiceProvider().hashCode();
-        result = 31 * result + getServiceID();
-        result = 31 * result + getTypeOfService().hashCode();
-        result = 31 * result + getTypeOfCommunity().hashCode();
-        result = 31 * result + getTypeOfFoodSvc().hashCode();
-        result = 31 * result + getTypeOfHealthSvc().hashCode();
-        result = 31 * result + getTypeOfClothingCloset().hashCode();
-        result = 31 * result + getEligibility().hashCode();
-        result = 31 * result + getReqDocuments().hashCode();
-        result = 31 * result + getIntakeProcedure().hashCode();
-        result = 31 * result + getTimePlaceInfo().hashCode();
-        result = 31 * result + getFacilityHoursOfOper().hashCode();
-        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
-        result = 31 * result + (isPossibleFees() ? 1 : 0);
-        return result;
-    }
+//    @Override
+//    public int hashCode() {
+//        int result = getServiceProvider().hashCode();
+//        result = 31 * result + getServiceID();
+//        result = 31 * result + getTypeOfService().hashCode();
+//        result = 31 * result + getTypeOfCommunity().hashCode();
+//        result = 31 * result + getTypeOfFoodSvc().hashCode();
+//        result = 31 * result + getTypeOfHealthSvc().hashCode();
+//        result = 31 * result + getTypeOfClothingCloset().hashCode();
+//        result = 31 * result + getEligibility().hashCode();
+//        result = 31 * result + getReqDocuments().hashCode();
+//        result = 31 * result + getIntakeProcedure().hashCode();
+//        result = 31 * result + getTimePlaceInfo().hashCode();
+//        result = 31 * result + getFacilityHoursOfOper().hashCode();
+//        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
+//        result = 31 * result + (isPossibleFees() ? 1 : 0);
+//        return result;
+//    }
 }

@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServiceinfoApplication {
+public class ServiceInfoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceinfoApplication.class, args);
+		SpringApplication.run(ServiceInfoApplication.class, args);
 	}
 }

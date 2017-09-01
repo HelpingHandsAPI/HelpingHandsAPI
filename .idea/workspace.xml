@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5488f2c-6d86-49f2-904f-aee9ec7021df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_derby_derby_10_13_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/derby.log" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_samskivert_jmustache_1_13.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" afterPath="" />
@@ -18,7 +18,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1212_jre7.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_5_6_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_5_6_RELEASE.xml" afterPath="" />
@@ -52,16 +51,31 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/BackendUserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/StateRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProvider.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceInfoApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/ServiceinfoApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/ServiceInfoApplicationTests.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/ServiceinfoApplication.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/ServiceinfoApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/controller/ServiceProviderController.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/controller/ServiceProviderController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/Service.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/Service.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/ServiceProvider.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/ServiceProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProvider.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceinfo.iml" afterPath="$PROJECT_DIR$/serviceinfo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
@@ -77,64 +91,130 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ServiceProviderController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ServiceProviderController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
+            <state relative-caret-position="869">
+              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ServiceProvider.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="116" column="53" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9335">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#934#935#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2225#2226#0" expanded="true" />
-                <element signature="e#2295#2296#0" expanded="true" />
-                <element signature="e#2351#2352#0" expanded="true" />
+                <marker date="1504284670000" expanded="true" signature="77641:77658" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77641:77676" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77641:77689" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77641:77704" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77739:79125" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77752:79110" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77803:78075" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77822:78060" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77855:78040" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77895:78006" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="77916:77984" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78118:78431" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78137:78416" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78211:78396" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78251:78362" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78272:78340" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78466:78772" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78485:78757" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78559:78737" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78599:78703" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78620:78681" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78824:79096" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78843:79081" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78876:79061" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78916:79027" ph="..." />
+                <marker date="1504284670000" expanded="true" signature="78937:79005" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HHServiceProvider.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java">
+      <file leaf-file-name="serviceinfo.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/serviceinfo.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HHServiceProviderImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#766#767#0" expanded="true" />
-                <element signature="e#825#826#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="43" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,8 +254,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/HealthcareService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/Transportation.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/TransitionalHousingService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/VoterRegistration.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/TempAddressService.java" />
@@ -199,11 +277,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/SpecServiceDetails.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/SpecSvcDetailsRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/SpecificServiceDetails.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/StateAbbrevMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/StateMap.java" />
@@ -215,16 +290,21 @@
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/TypeOfHealthSvc.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/TypeOfCommunity.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceInfoApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" />
       </list>
     </option>
   </component>
@@ -242,9 +322,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
+    <option name="x" value="100" />
     <option name="y" value="23" />
-    <option name="width" value="736" />
+    <option name="width" value="1278" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -265,9 +345,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -315,33 +396,20 @@
               <item name="HelpingHands" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HelpingHands" type="b2602c69:ProjectViewProjectNode" />
               <item name="HelpingHands" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelpingHands" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelpingHands" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -351,7 +419,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="SearchEverywhereHistoryKey" value="Application&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java&#10;org.hibernate.mapping.Column(service_provider)&#9;null&#9;null&#10;rg.hibernate.mapping.Column(service_provider)&#9;null&#9;null&#10;application.properties&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/src/main/resources/application.properties&#10;persistence.xml&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+    <property name="SearchEverywhereHistoryKey" value="Connector&#9;PSI&#9;JAVA://org.apache.catalina.connector.Connector&#10;server.xml&#9;null&#9;null&#10;Application&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java&#10;org.hibernate.mapping.Column(service_provider)&#9;null&#9;null&#10;rg.hibernate.mapping.Column(service_provider)&#9;null&#9;null&#10;application.properties&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/src/main/resources/application.properties&#10;persistence.xml&#9;FILE&#9;file:///Users/adriennebing/IdeaProjects/HelpingHands/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -370,7 +438,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ServiceinfoApplication">
+  <component name="RunManager" selected="Application.ServiceInfoApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -390,14 +458,14 @@
       <module name="serviceinfo" />
       <envs />
     </configuration>
-    <configuration name="ServiceinfoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="ServiceInfoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="org.helpinghands.serviceinfo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="org.helpinghands.serviceinfo.ServiceinfoApplication" />
+      <option name="MAIN_CLASS_NAME" value="org.helpinghands.serviceinfo.ServiceInfoApplication" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -492,11 +560,11 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ServiceinfoApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ServiceInfoApplication" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.ServiceinfoApplication" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ServiceInfoApplication" />
         <item index="1" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -518,7 +586,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="23" width="736" height="873" extended-state="0" />
+    <frame x="100" y="23" width="1278" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -529,17 +597,17 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.432" sideWeight="0.12864077" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953104" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27377892" sideWeight="0.8713592" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27377892" sideWeight="0.8713592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3443804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39974293" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44730076" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -587,22 +655,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/HealthcareService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/Food.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/HealthService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/TempAddressService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepositoryImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/RepresentativePayeeService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/ClothingService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/FoodService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/HealthcareService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/IdDocumentService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/JobTrainingService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/LegalService.java" />
@@ -612,30 +664,8 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/ChildcareService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceRepositoryImpl.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/SpecSvcDetailsRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="103" lean-forward="false" selection-start-line="4" selection-start-column="103" selection-end-line="4" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/SpecificServiceDetails.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/TypeOfClothingCloset.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -673,100 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/BackendUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/VoterRegistration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="57" lean-forward="false" selection-start-line="5" selection-start-column="57" selection-end-line="5" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/StateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="26" lean-forward="false" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="84" lean-forward="false" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -779,30 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
           <caret line="48" column="9" lean-forward="false" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/BackendUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -823,47 +735,304 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/VoterRegistration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/StateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.6.RELEASE/spring-boot-1.5.6.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1117" column="0" lean-forward="false" selection-start-line="1117" selection-start-column="0" selection-end-line="1117" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="35" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#825#826#0" expanded="true" />
+            <element signature="e#0#1018#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="49" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1225#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#86#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#808#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="e#1015#1016#0" expanded="true" />
+            <element signature="e#1086#1087#0" expanded="true" />
+            <element signature="e#1142#1143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/BackendUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/BackendUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="36" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#270#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#234#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#252#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="2460">
+          <caret line="220" column="5" lean-forward="false" selection-start-line="220" selection-start-column="5" selection-end-line="237" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceInfoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="116" column="53" lean-forward="false" selection-start-line="116" selection-start-column="53" selection-end-line="116" selection-end-column="53" />
+        <state relative-caret-position="135">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/8.5.16/tomcat-embed-core-8.5.16-sources.jar!/org/apache/catalina/connector/Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="50" column="2" lean-forward="false" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9335">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#934#935#0" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2225#2226#0" expanded="true" />
-            <element signature="e#2295#2296#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
+            <marker date="1504284670000" expanded="true" signature="77641:77658" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77641:77676" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77641:77689" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77641:77704" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77739:79125" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77752:79110" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77803:78075" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77822:78060" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77855:78040" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77895:78006" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="77916:77984" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78118:78431" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78137:78416" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78211:78396" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78251:78362" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78272:78340" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78466:78772" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78485:78757" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78559:78737" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78599:78703" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78620:78681" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78824:79096" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78843:79081" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78876:79061" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78916:79027" ph="..." />
+            <marker date="1504284670000" expanded="true" signature="78937:79005" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/serviceinfo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="869">
+          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
