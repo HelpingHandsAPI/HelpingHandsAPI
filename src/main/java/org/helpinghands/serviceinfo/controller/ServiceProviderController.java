@@ -29,6 +29,14 @@ public class ServiceProviderController {
     //Java to Json
     private ObjectMapper objectMapper = new ObjectMapper();
 
+    @GetMapping("/api/org/{providerID}")
+    public List<Service> getProvidersServices(@PathVariable int providerId){
+        ServiceProvider serviceProvider = serviceProviderRepository.findOne(providerId);
+
+        return serviceProvider.getServicesProvided();
+    }
+
+
     /**
      * Add a service provider
      */
@@ -68,12 +76,6 @@ public class ServiceProviderController {
      *
      * @return A list of Service providers along with the services they provide
      */
-    @GetMapping("/api/org/{providerID}")
-    public List<Service> getProvidersServices(@PathVariable int providerId){
-        ServiceProvider serviceProvider = serviceProviderRepository.findOne(providerId);
-
-        return serviceProvider.getServicesProvided();
-    }
 
     @DeleteMapping("/api/org/{providerID}/delete")
     public String deleteProvider(@PathVariable int providerID) {

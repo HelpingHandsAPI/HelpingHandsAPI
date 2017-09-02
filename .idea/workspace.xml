@@ -2,84 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5488f2c-6d86-49f2-904f-aee9ec7021df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/derby.log" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_samskivert_jmustache_1_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_56.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_56.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hsqldb_hsqldb_2_3_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mustache_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_social_facebook_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_social_twitter_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_6_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_security_1_2_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_1_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_oauth2_1_2_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_security_1_2_1_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_restdocs_spring_restdocs_core_1_1_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_restdocs_spring_restdocs_mockmvc_1_1_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_oauth_spring_security_oauth2_2_0_14_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_jwt_1_0_8_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_config_1_1_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_core_1_1_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_facebook_2_0_3_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_twitter_1_1_2_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_social_spring_social_web_1_1_4_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_10_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/BackendUserRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/StateRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProvider.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceinfoApplication.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceInfoApplication.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/ServiceinfoApplicationTests.java" afterPath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/ServiceInfoApplicationTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/ServiceinfoApplication.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/ServiceinfoApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/controller/ServiceProviderController.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/controller/ServiceProviderController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/Service.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/Service.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/ServiceProvider.class" afterPath="$PROJECT_DIR$/target/classes/org/helpinghands/serviceinfo/domain/ServiceProvider.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/common/ServiceProviderUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/service/ServiceProviderSvcTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/serviceinfo.iml" afterPath="$PROJECT_DIR$/serviceinfo.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/BackendUserRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/StateRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/VoterRegistrationRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" afterPath="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -91,11 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ServiceProviderController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ServiceProviderController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
-              <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="53" />
+            <state relative-caret-position="-122">
+              <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HHServiceProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,119 +41,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="HHServiceProviderImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="misc.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="modules.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="uiDesigner.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vcs.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9335">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="330">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding>
-                <marker date="1504284670000" expanded="true" signature="77641:77658" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77641:77676" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77641:77689" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77641:77704" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77739:79125" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77752:79110" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77803:78075" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77822:78060" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77855:78040" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77895:78006" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="77916:77984" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78118:78431" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78137:78416" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78211:78396" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78251:78362" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78272:78340" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78466:78772" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78485:78757" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78559:78737" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78599:78703" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78620:78681" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78824:79096" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78843:79081" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78876:79061" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78916:79027" ph="..." />
-                <marker date="1504284670000" expanded="true" signature="78937:79005" ph="..." />
+                <element signature="imports" expanded="true" />
+                <element signature="e#766#767#0" expanded="true" />
+                <element signature="e#825#826#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serviceinfo.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/serviceinfo.iml">
+      <file leaf-file-name="ServiceProvider.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="645">
+              <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+              <folding>
+                <element signature="e#1015#1016#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -293,8 +140,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/repository/ServiceProviderRepository.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/Service.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHService.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java" />
@@ -305,6 +150,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/ServiceInfoApplication.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java" />
       </list>
     </option>
   </component>
@@ -322,9 +169,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
+    <option name="x" value="34" />
     <option name="y" value="23" />
-    <option name="width" value="1278" />
+    <option name="width" value="874" />
     <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -389,22 +236,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="serviceinfo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelpingHands" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelpingHands" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HelpingHands" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HelpingHands" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -586,7 +418,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="23" width="1278" height="873" extended-state="0" />
+    <frame x="34" y="23" width="874" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -597,12 +429,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.432" sideWeight="0.12864077" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953104" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27377892" sideWeight="0.8713592" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27377892" sideWeight="0.8713592" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32933334" sideWeight="0.49676377" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33009708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20192307" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -655,8 +487,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/IdDocumentService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/JobTrainingService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/LegalService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/PermanentHousingService.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/model/services/TransportationService.java" />
@@ -790,26 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="35" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#1018#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1225#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -826,18 +636,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="e#0#808#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding>
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1142#1143#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,14 +734,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -965,32 +755,32 @@
         <state relative-caret-position="-9335">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1504284670000" expanded="true" signature="77641:77658" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77641:77676" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77641:77689" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77641:77704" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77739:79125" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77752:79110" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77803:78075" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77822:78060" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77855:78040" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77895:78006" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="77916:77984" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78118:78431" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78137:78416" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78211:78396" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78251:78362" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78272:78340" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78466:78772" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78485:78757" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78559:78737" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78599:78703" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78620:78681" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78824:79096" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78843:79081" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78876:79061" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78916:79027" ph="..." />
-            <marker date="1504284670000" expanded="true" signature="78937:79005" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60122:60139" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60122:60157" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60122:60170" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60122:60185" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60220:61606" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60233:61591" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60284:60556" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60303:60541" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60336:60521" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60376:60487" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60397:60465" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60599:60912" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60618:60897" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60692:60877" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60732:60843" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60753:60821" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60947:61253" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="60966:61238" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61040:61218" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61080:61184" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61101:61162" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61305:61577" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61324:61562" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61357:61542" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61397:61508" ph="..." />
+            <marker date="1504292338000" expanded="true" signature="61418:61486" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1027,12 +817,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/domain/ServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding>
+            <element signature="e#1015#1016#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/controller/ServiceProviderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
-          <caret line="74" column="8" lean-forward="false" selection-start-line="74" selection-start-column="8" selection-end-line="74" selection-end-column="53" />
+        <state relative-caret-position="-122">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/common/ServiceProviderUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/helpinghands/serviceinfo/service/ServiceProviderSvcTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/helpinghands/serviceinfo/service/HHServiceProviderImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#766#767#0" expanded="true" />
+            <element signature="e#825#826#0" expanded="true" />
           </folding>
         </state>
       </provider>
