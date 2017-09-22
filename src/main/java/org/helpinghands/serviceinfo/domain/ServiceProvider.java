@@ -132,6 +132,7 @@ public class ServiceProvider {
 //        this.servicesProvided = servicesProvided;
 //    }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -139,26 +140,26 @@ public class ServiceProvider {
 
         ServiceProvider that = (ServiceProvider) o;
 
-        if (getProviderID() != that.getProviderID()) return false;
         if (getZip() != that.getZip()) return false;
         if (!getName().equals(that.getName())) return false;
         if (getWebsite() != null ? !getWebsite().equals(that.getWebsite()) : that.getWebsite() != null) return false;
-        if (getPhone() != null ? !getPhone().equals(that.getPhone()) : that.getPhone() != null) return false;
-        if (!getAddress().equals(that.getAddress())) return false;
-        if (!getCity().equals(that.getCity())) return false;
-        return getState().equals(that.getState());
+        if (!getPhone().equals(that.getPhone())) return false;
+        if (getAddress() != null ? !getAddress().equals(that.getAddress()) : that.getAddress() != null) return false;
+        if (getCity() != null ? !getCity().equals(that.getCity()) : that.getCity() != null) return false;
+        if (getState() != that.getState()) return false;
+        return getServicesProvided().equals(that.getServicesProvided());
     }
 
     @Override
     public int hashCode() {
-        int result = getProviderID();
-        result = 31 * result + getName().hashCode();
+        int result = getName().hashCode();
         result = 31 * result + (getWebsite() != null ? getWebsite().hashCode() : 0);
-        result = 31 * result + (getPhone() != null ? getPhone().hashCode() : 0);
-        result = 31 * result + getAddress().hashCode();
-        result = 31 * result + getCity().hashCode();
-        result = 31 * result + getState().hashCode();
+        result = 31 * result + getPhone().hashCode();
+        result = 31 * result + (getAddress() != null ? getAddress().hashCode() : 0);
+        result = 31 * result + (getCity() != null ? getCity().hashCode() : 0);
+        result = 31 * result + (getState() != null ? getState().hashCode() : 0);
         result = 31 * result + getZip();
+        result = 31 * result + getServicesProvided().hashCode();
         return result;
     }
 

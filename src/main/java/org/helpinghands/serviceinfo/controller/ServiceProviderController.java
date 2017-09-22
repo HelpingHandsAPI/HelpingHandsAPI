@@ -6,13 +6,13 @@ import org.helpinghands.serviceinfo.domain.ServiceProvider;
 //import org.helpinghands.serviceinfo.service.HHServiceProvider;
 import org.helpinghands.serviceinfo.repository.ServiceProviderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
-import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+//import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+//import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+//import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+//import org.springframework.boot.context.properties.ConfigurationProperties;
+//import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
-import org.springframework.ui.Model;
+//import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
@@ -23,16 +23,16 @@ public class ServiceProviderController {
 
 //    @Autowired
 //    private HHServiceProvider serviceProviderSvc;
+
     @Autowired
     ServiceProviderRepository serviceProviderRepository;
 
     //Java to Json
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    @GetMapping("/api/org/{providerID}")
+    @GetMapping("/api/org/{providerID}/services")
     public List<Service> getProvidersServices(@PathVariable int providerId){
         ServiceProvider serviceProvider = serviceProviderRepository.findOne(providerId);
-
         return serviceProvider.getServicesProvided();
     }
 
