@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface ServiceProviderRepository extends JpaRepository<ServiceProvider, Integer>{
 
+    
 }

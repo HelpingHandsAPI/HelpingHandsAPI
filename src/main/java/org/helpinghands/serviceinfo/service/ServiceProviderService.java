@@ -6,9 +6,10 @@ import org.helpinghands.serviceinfo.domain.ServiceProvider;
 //import java.util.Comparator;
 import java.util.List;
 
-public interface HHServiceProvider {
+public interface ServiceProviderService {
     //Add, Update and delete Service Provider
-    void add(ServiceProvider serviceProvider);
+    ServiceProvider add(ServiceProvider serviceProvider);
+    void add(List<ServiceProvider> serviceProviders);
     void update(ServiceProvider serviceProvider);
     void delete(int id);
 
@@ -16,7 +17,13 @@ public interface HHServiceProvider {
     ServiceProvider getServiceProviderById(int id);
 
     //Get a list of services that the Service Provider offers
-    List<Service> getServicesOffered();
+//    List<Service> getServicesOffered(int id);
+
+    //Add a Service that is will be connected to a Service Provider
+   L addService(Service service);
+
+    //Delete a Service that will be connected to a Service Provider
+    List deleteService(Service service);
 
     //Get a list of Service Providers
     List<ServiceProvider> getAllServiceProviders();

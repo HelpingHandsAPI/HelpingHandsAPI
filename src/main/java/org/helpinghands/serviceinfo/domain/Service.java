@@ -19,6 +19,13 @@ public class Service {
     @Column(name = "ServiceName")
     private Enum TypeOfService;
 
+    @Column
+    private int providerID;
+
+    @ManyToOne
+    @JoinColumn(name="ProviderID")
+    private ServiceProvider serviceProvider;
+
     @Column(name = "CommunityServed")
     private Enum TypeOfCommunity;
 
@@ -63,14 +70,6 @@ public class Service {
     public Service() {
     }
 
-//    public ServiceProvider getServiceProvider() {
-//        return serviceProvider;
-//    }
-
-//    public void setServiceProvider(ServiceProvider serviceProvider) {
-//        this.serviceProvider = serviceProvider;
-//    }
-
     public int getServiceID() {
         return serviceID;
     }
@@ -85,6 +84,22 @@ public class Service {
 
     public void setTypeOfService(Enum typeOfService) {
         TypeOfService = typeOfService;
+    }
+
+    public int getProviderID() {
+        return providerID;
+    }
+
+    public void setProviderID(int providerID) {
+        this.providerID = providerID;
+    }
+
+    public ServiceProvider getServiceProvider() {
+        return serviceProvider;
+    }
+
+    public void setServiceProvider(ServiceProvider serviceProvider) {
+        this.serviceProvider = serviceProvider;
     }
 
     public Enum getTypeOfCommunity() {
@@ -175,26 +190,6 @@ public class Service {
         this.possibleFees = possibleFees;
     }
 
-
-    @Override
-    public String toString() {
-        return "Service{" +
-                ", serviceID=" + serviceID +
-                ", TypeOfService=" + TypeOfService +
-                ", TypeOfCommunity=" + TypeOfCommunity +
-                ", TypeOfFoodSvc=" + TypeOfFoodSvc +
-                ", TypeOfHealthSvc=" + TypeOfHealthSvc +
-                ", TypeOfClothingCloset=" + TypeOfClothingCloset +
-                ", eligibility=" + eligibility +
-                ", reqDocuments=" + reqDocuments +
-                ", intakeProcedure=" + intakeProcedure +
-                ", timePlaceInfo=" + timePlaceInfo +
-                ", facilityHoursOfOper=" + facilityHoursOfOper +
-                ", specialDetails=" + specialDetails +
-                ", possibleFees=" + possibleFees +
-                '}';
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -202,38 +197,68 @@ public class Service {
 
         Service service = (Service) o;
 
-        if (getServiceID() != service.getServiceID()) return false;
+        if (getProviderID() != service.getProviderID()) return false;
         if (isPossibleFees() != service.isPossibleFees()) return false;
-//        if (!getServiceProvider().equals(service.getServiceProvider())) return false;
         if (!getTypeOfService().equals(service.getTypeOfService())) return false;
-        if (!getTypeOfCommunity().equals(service.getTypeOfCommunity())) return false;
-        if (!getTypeOfFoodSvc().equals(service.getTypeOfFoodSvc())) return false;
-        if (!getTypeOfHealthSvc().equals(service.getTypeOfHealthSvc())) return false;
-        if (!getTypeOfClothingCloset().equals(service.getTypeOfClothingCloset())) return false;
-        if (!getEligibility().equals(service.getEligibility())) return false;
-        if (!getReqDocuments().equals(service.getReqDocuments())) return false;
-        if (!getIntakeProcedure().equals(service.getIntakeProcedure())) return false;
-        if (!getTimePlaceInfo().equals(service.getTimePlaceInfo())) return false;
-        if (!getFacilityHoursOfOper().equals(service.getFacilityHoursOfOper())) return false;
+        if (!getServiceProvider().equals(service.getServiceProvider())) return false;
+        if (getTypeOfCommunity() != null ? !getTypeOfCommunity().equals(service.getTypeOfCommunity()) : service.getTypeOfCommunity() != null)
+            return false;
+        if (getTypeOfFoodSvc() != null ? !getTypeOfFoodSvc().equals(service.getTypeOfFoodSvc()) : service.getTypeOfFoodSvc() != null)
+            return false;
+        if (getTypeOfHealthSvc() != null ? !getTypeOfHealthSvc().equals(service.getTypeOfHealthSvc()) : service.getTypeOfHealthSvc() != null)
+            return false;
+        if (getTypeOfClothingCloset() != null ? !getTypeOfClothingCloset().equals(service.getTypeOfClothingCloset()) : service.getTypeOfClothingCloset() != null)
+            return false;
+        if (getEligibility() != null ? !getEligibility().equals(service.getEligibility()) : service.getEligibility() != null)
+            return false;
+        if (getReqDocuments() != null ? !getReqDocuments().equals(service.getReqDocuments()) : service.getReqDocuments() != null)
+            return false;
+        if (getIntakeProcedure() != null ? !getIntakeProcedure().equals(service.getIntakeProcedure()) : service.getIntakeProcedure() != null)
+            return false;
+        if (getTimePlaceInfo() != null ? !getTimePlaceInfo().equals(service.getTimePlaceInfo()) : service.getTimePlaceInfo() != null)
+            return false;
+        if (getFacilityHoursOfOper() != null ? !getFacilityHoursOfOper().equals(service.getFacilityHoursOfOper()) : service.getFacilityHoursOfOper() != null)
+            return false;
         return getSpecialDetails() != null ? getSpecialDetails().equals(service.getSpecialDetails()) : service.getSpecialDetails() == null;
     }
 
-//    @Override
-//    public int hashCode() {
-//        int result = getServiceProvider().hashCode();
-//        result = 31 * result + getServiceID();
-//        result = 31 * result + getTypeOfService().hashCode();
-//        result = 31 * result + getTypeOfCommunity().hashCode();
-//        result = 31 * result + getTypeOfFoodSvc().hashCode();
-//        result = 31 * result + getTypeOfHealthSvc().hashCode();
-//        result = 31 * result + getTypeOfClothingCloset().hashCode();
-//        result = 31 * result + getEligibility().hashCode();
-//        result = 31 * result + getReqDocuments().hashCode();
-//        result = 31 * result + getIntakeProcedure().hashCode();
-//        result = 31 * result + getTimePlaceInfo().hashCode();
-//        result = 31 * result + getFacilityHoursOfOper().hashCode();
-//        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
-//        result = 31 * result + (isPossibleFees() ? 1 : 0);
-//        return result;
-//    }
+    @Override
+    public int hashCode() {
+        int result = getTypeOfService().hashCode();
+        result = 31 * result + getProviderID();
+        result = 31 * result + getServiceProvider().hashCode();
+        result = 31 * result + (getTypeOfCommunity() != null ? getTypeOfCommunity().hashCode() : 0);
+        result = 31 * result + (getTypeOfFoodSvc() != null ? getTypeOfFoodSvc().hashCode() : 0);
+        result = 31 * result + (getTypeOfHealthSvc() != null ? getTypeOfHealthSvc().hashCode() : 0);
+        result = 31 * result + (getTypeOfClothingCloset() != null ? getTypeOfClothingCloset().hashCode() : 0);
+        result = 31 * result + (getEligibility() != null ? getEligibility().hashCode() : 0);
+        result = 31 * result + (getReqDocuments() != null ? getReqDocuments().hashCode() : 0);
+        result = 31 * result + (getIntakeProcedure() != null ? getIntakeProcedure().hashCode() : 0);
+        result = 31 * result + (getTimePlaceInfo() != null ? getTimePlaceInfo().hashCode() : 0);
+        result = 31 * result + (getFacilityHoursOfOper() != null ? getFacilityHoursOfOper().hashCode() : 0);
+        result = 31 * result + (getSpecialDetails() != null ? getSpecialDetails().hashCode() : 0);
+        result = 31 * result + (isPossibleFees() ? 1 : 0);
+        return result;
+    }
+
+    @Override
+    public String toString() {
+        return "Service{" +
+                "serviceID=" + serviceID +
+                ", TypeOfService=" + TypeOfService +
+                ", providerID=" + providerID +
+                ", serviceProvider=" + serviceProvider +
+                ", TypeOfCommunity=" + TypeOfCommunity +
+                ", TypeOfFoodSvc=" + TypeOfFoodSvc +
+                ", TypeOfHealthSvc=" + TypeOfHealthSvc +
+                ", TypeOfClothingCloset=" + TypeOfClothingCloset +
+                ", eligibility='" + eligibility + '\'' +
+                ", reqDocuments='" + reqDocuments + '\'' +
+                ", intakeProcedure='" + intakeProcedure + '\'' +
+                ", timePlaceInfo='" + timePlaceInfo + '\'' +
+                ", facilityHoursOfOper='" + facilityHoursOfOper + '\'' +
+                ", specialDetails='" + specialDetails + '\'' +
+                ", possibleFees=" + possibleFees +
+                '}';
+    }
 }

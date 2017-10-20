@@ -1,10 +1,9 @@
 package org.helpinghands.serviceinfo.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.helpinghands.serviceinfo.domain.Service;
 import org.helpinghands.serviceinfo.domain.ServiceProvider;
-//import org.helpinghands.serviceinfo.service.HHServiceProvider;
-import org.helpinghands.serviceinfo.repository.ServiceProviderRepository;
+//import org.helpinghands.serviceinfo.service.ServiceProviderService;
+import org.helpinghands.serviceinfo.service.ServiceProviderService;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 //import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -22,40 +21,53 @@ import java.util.List;
 public class ServiceProviderController {
 
 //    @Autowired
-//    private HHServiceProvider serviceProviderSvc;
+//    private ServiceProviderService serviceProviderSvc;
 
     @Autowired
-    ServiceProviderRepository serviceProviderRepository;
+    ServiceProviderService svcProviderService;
 
     //Java to Json
     private ObjectMapper objectMapper = new ObjectMapper();
 
-    @GetMapping("/api/org/{providerID}/services")
-    public List<Service> getProvidersServices(@PathVariable int providerId){
-        ServiceProvider serviceProvider = serviceProviderRepository.findOne(providerId);
-        return serviceProvider.getServicesProvided();
+//    @GetMapping("/api/org/{ID}/services")                                                     s
+//    public List<Service> getProviderServices(@PathVariable int ID){
+//        ServiceProvider serviceProvider = serviceProviderRepository.findOne(ID);
+//        return serviceProvider.getServicesProvided(ID);
+//    }
+
+    @GetMapping("/")
+    public String homePage(){
+        return "Home Page";
     }
 
+    /**
+     * *
+     * @return
+     * Returns a list of all Service Providers
+     */
+    @GetMapping("/api/org/svcProviderList")
+     public List<ServiceProvider> getAllServiceProviders() {
+        return svcProviderService.getAllServiceProviders();
+     }
+
+     
 
     /**
      * Add a service provider
      */
     @PostMapping("/api/admin/org/createprofile")
-    public String addServiceProvider(@RequestBody String json) throws IOException {
+    public ServiceProvider addServiceProvider(@RequestBody String json) throws IOException {
         ServiceProvider newServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
-//        serviceProviderSvc.add(newServiceProvider);
-        serviceProviderRepository.save(newServiceProvider);
-
-        return "New Service Provider";
+        return svcProviderService.add(newServiceProvider);
     }
 
     /**
      * Update Service Provider
      */
-    @PutMapping("/api/admin/id/updateinfo")
-    public String updateServiceProvider(@PathVariable("providerID") Integer providerID, @RequestBody String json) throws IOException {
+    @PutMapping("/api/admin/providerid/updateinfo")
+    public String updateServiceProvider(@PathVariable("ID") Integer ID, @RequestBody String json) throws IOException {
         ServiceProvider updateServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
-        updateServiceProvider.setProviderID(providerID);
+        updateServiceProvider.setID(ID);
 //        serviceProviderSvc.update(updateServiceProvider);
         serviceProviderRepository.save(updateServiceProvider);
 
@@ -77,11 +89,11 @@ public class ServiceProviderController {
      * @return A list of Service providers along with the services they provide
      */
 
-    @DeleteMapping("/api/org/{providerID}/delete")
-    public String deleteProvider(@PathVariable int providerID) {
-//        serviceProviderSvc.delete(providerID);
+    @DeleteMapping("/api/org/{ID}/delete")
+    public String deleteProvider(@PathVariable int ID) {
+//        serviceProviderSvc.delete(ID);
 
-        serviceProviderRepository.findOne(providerID);
+        serviceProviderRepository.findOne(ID);
         return "Service Provider deleted";
     }
 

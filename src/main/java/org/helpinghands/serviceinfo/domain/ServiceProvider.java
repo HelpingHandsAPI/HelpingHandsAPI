@@ -1,15 +1,16 @@
 package org.helpinghands.serviceinfo.domain;
 
 import javax.persistence.*;
-import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table( name = "ServiceProvider")
 public class ServiceProvider {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int providerID;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name="ProviderID", updatable=false, nullable=false)
+    private int ID;
 
     @Column(name = "ProviderName")
     private String name;
@@ -32,15 +33,23 @@ public class ServiceProvider {
     @Column(name = "Zip")
     private int zip;
 
-//    @Column
-//    @ElementCollection
-//    @CollectionTable(
-//            name="Service",
-//            joinColumns=@JoinColumn(name="serviceID"))
-    @OneToMany
+    @Column(name="DateModified")
+    private Date dateModified = new Date();
+
+    @Column(name = "Verified")
+    private boolean infoVerified;
+
+    @OneToMany(mappedBy = "serviceProvider", fetch = FetchType.EAGER)
+    @JoinColumn(name="ProviderID")
     private List<Service> servicesProvided;
 
+
     public ServiceProvider() {
+    }
+
+    public void addService(Service providerService) {
+        this.servicesProvided.add(providerService);
+        providerService.setServiceProvider(this);
     }
 
     public List<Service> getServicesProvided() {
@@ -51,12 +60,12 @@ public class ServiceProvider {
         this.servicesProvided = servicesProvided;
     }
 
-    public int getProviderID() {
-        return providerID;
+    public int getID() {
+        return ID;
     }
 
-    public void setProviderID(int providerID) {
-        this.providerID = providerID;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
 
@@ -118,6 +127,22 @@ public class ServiceProvider {
         return zip;
     }
 
+    public Date getDateModified() {
+        return dateModified;
+    }
+
+    public void setDateModified(Date dateModified) {
+        this.dateModified = dateModified;
+    }
+
+    public boolean isInfoVerified() {
+        return infoVerified;
+    }
+
+    public void setInfoVerified(boolean infoVerified) {
+        this.infoVerified = infoVerified;
+    }
+
     public void setZip(int zip) {
         this.zip = zip;
     }
@@ -141,13 +166,15 @@ public class ServiceProvider {
         ServiceProvider that = (ServiceProvider) o;
 
         if (getZip() != that.getZip()) return false;
+        if (isInfoVerified() != that.isInfoVerified()) return false;
         if (!getName().equals(that.getName())) return false;
         if (getWebsite() != null ? !getWebsite().equals(that.getWebsite()) : that.getWebsite() != null) return false;
         if (!getPhone().equals(that.getPhone())) return false;
-        if (getAddress() != null ? !getAddress().equals(that.getAddress()) : that.getAddress() != null) return false;
-        if (getCity() != null ? !getCity().equals(that.getCity()) : that.getCity() != null) return false;
+        if (!getAddress().equals(that.getAddress())) return false;
+        if (!getCity().equals(that.getCity())) return false;
         if (getState() != that.getState()) return false;
-        return getServicesProvided().equals(that.getServicesProvided());
+        if (!getDateModified().equals(that.getDateModified())) return false;
+        return getServicesProvided() != null ? getServicesProvided().equals(that.getServicesProvided()) : that.getServicesProvided() == null;
     }
 
     @Override
@@ -155,25 +182,30 @@ public class ServiceProvider {
         int result = getName().hashCode();
         result = 31 * result + (getWebsite() != null ? getWebsite().hashCode() : 0);
         result = 31 * result + getPhone().hashCode();
-        result = 31 * result + (getAddress() != null ? getAddress().hashCode() : 0);
-        result = 31 * result + (getCity() != null ? getCity().hashCode() : 0);
-        result = 31 * result + (getState() != null ? getState().hashCode() : 0);
+        result = 31 * result + getAddress().hashCode();
+        result = 31 * result + getCity().hashCode();
+        result = 31 * result + getState().hashCode();
         result = 31 * result + getZip();
-        result = 31 * result + getServicesProvided().hashCode();
+        result = 31 * result + getDateModified().hashCode();
+        result = 31 * result + (isInfoVerified() ? 1 : 0);
+        result = 31 * result + (getServicesProvided() != null ? getServicesProvided().hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Service{" +
-                "providerID=" + providerID +
+        return "ServiceProvider{" +
+                "ID=" + ID +
                 ", name='" + name + '\'' +
                 ", website='" + website + '\'' +
                 ", phone='" + phone + '\'' +
                 ", address='" + address + '\'' +
                 ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
+                ", state=" + state +
                 ", zip=" + zip +
+                ", dateModified=" + dateModified +
+                ", infoVerified=" + infoVerified +
+                ", servicesProvided=" + servicesProvided +
                 '}';
     }
 }
