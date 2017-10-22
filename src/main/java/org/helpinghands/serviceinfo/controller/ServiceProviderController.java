@@ -28,30 +28,22 @@ public class ServiceProviderController {
 
     //Java to Json
     private ObjectMapper objectMapper = new ObjectMapper();
-
-//    @GetMapping("/api/org/{ID}/services")                                                     s
-//    public List<Service> getProviderServices(@PathVariable int ID){
-//        ServiceProvider serviceProvider = serviceProviderRepository.findOne(ID);
-//        return serviceProvider.getServicesProvided(ID);
-//    }
-
+    
     @GetMapping("/")
     public String homePage(){
-        return "Home Page";
+        return "Welcome To My Home Page";
     }
 
     /**
      * *
      * @return
-     * Returns a list of all Service Providers
+     * Returns a list of all ServiceGiven Providers
      */
     @GetMapping("/api/org/svcProviderList")
      public List<ServiceProvider> getAllServiceProviders() {
         return svcProviderService.getAllServiceProviders();
      }
-
-     
-
+    
     /**
      * Add a service provider
      */
@@ -62,38 +54,34 @@ public class ServiceProviderController {
     }
 
     /**
-     * Update Service Provider
+     * Update ServiceGiven Provider
      */
-    @PutMapping("/api/admin/providerid/updateinfo")
-    public String updateServiceProvider(@PathVariable("ID") Integer ID, @RequestBody String json) throws IOException {
-        ServiceProvider updateServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
-        updateServiceProvider.setID(ID);
-//        serviceProviderSvc.update(updateServiceProvider);
-        serviceProviderRepository.save(updateServiceProvider);
-
-        return "Updated Service Provider";
+    @PutMapping("/api/admin/{providerid}/updateinfo")
+    public ServiceProvider updateServiceProvider(@PathVariable("ID") Integer ID, @RequestBody String json) throws IOException {
+        ServiceProvider updatedServiceProvider = objectMapper.readValue(json, ServiceProvider.class);
+        updatedServiceProvider.setID(ID);
+        svcProviderService.update(updatedServiceProvider);
+        return updatedServiceProvider;
     }
 
     /**
-     * Gets a list of all Service Providers, without the services they provide
-     * @return A list of all Service Providers
+     * Gets a list of all ServiceGiven Providers, without the services they provide
+     * @return A list of all ServiceGiven Providers
      */
     @GetMapping("/api/org/serviceproviders")
     public List<ServiceProvider> getServiceProviders() {
-//        return serviceProviderSvc.getServiceProviders();
-       return serviceProviderRepository.findAll();
+       return svcProviderService.getAllServiceProviders();
     }
 
     /**
      *
-     * @return A list of Service providers along with the services they provide
+     * @return A list of Service Providers along with the services they provide
      */
 
     @DeleteMapping("/api/org/{ID}/delete")
     public String deleteProvider(@PathVariable int ID) {
 //        serviceProviderSvc.delete(ID);
-
-        serviceProviderRepository.findOne(ID);
+        svcProviderService.delete(ID);
         return "Service Provider deleted";
     }
 

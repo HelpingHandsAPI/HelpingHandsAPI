@@ -1,8 +1,8 @@
 package org.helpinghands.serviceinfo.service;
 
 import org.helpinghands.serviceinfo.domain.ServiceProvider;
+import org.helpinghands.serviceinfo.domain.TypeOfCommunity;
 import org.helpinghands.serviceinfo.repository.ServiceProviderRepository;
-import org.helpinghands.serviceinfo.repository.ServiceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.stereotype.Service;
@@ -16,10 +16,7 @@ public class ServiceProviderServiceImpl implements ServiceProviderService {
 
     @Autowired
     ServiceProviderRepository svcProviderRepository;
-
-    @Autowired
-    ServiceRepository serviceRepository;
-
+    
     @Transactional
     @Override
     public ServiceProvider add(ServiceProvider serviceProvider){ return svcProviderRepository.save(serviceProvider);}
@@ -50,29 +47,7 @@ public class ServiceProviderServiceImpl implements ServiceProviderService {
     public ServiceProvider getServiceProviderById(int id){
         return getServiceProvider(id);
     }
-
-//    @Transactional
-//    @Override
-//    public List<Service> getServicesOffered(int id){
-//    List<Service> servicesOffered = new ArrayList<>();
-//    svcProviderRepository.findOne(id).getServicesProvided();
     
-//
-//    return servicesOffered;
-//    }
-
-
-    
-    @Override
-    public List<Service> addService(Service service) {
-
-    }
-
-    @Override
-    public List<Service> deleteService(Service service) {
-
-    }
-
     @Transactional
     @Override
     public List<ServiceProvider> getAllServiceProviders() {
@@ -115,20 +90,16 @@ public class ServiceProviderServiceImpl implements ServiceProviderService {
     public List<ServiceProvider> getListForName(String name){return null;}
 
     @Override
-    public ServiceProvider getSvcProvidersByType(org.helpinghands.serviceinfo.domain.Service TypeOfService) {
-        return null;
+    public List<ServiceProvider> getSvcByGroupServed(TypeOfCommunity groupServed) {
+        List<ServiceProvider> svcProvidersByGroup = new ArrayList<>();
+        svcProviderRepository.findByTypeOfCommunity(groupServed)
+        .forEach(svcProvidersByGroup::add);
+        return svcProvidersByGroup;
     }
-
-    @Override
-    public List<org.helpinghands.serviceinfo.domain.Service> getSvcByGroupServed() {
-        return null;
-    }
-
-
+ 
     private ServiceProvider getServiceProvider(int id) {
         ServiceProvider serviceProvider = svcProviderRepository.findOne(id);
         serviceProvider.getServicesProvided();
         return serviceProvider;
     }
-
 }

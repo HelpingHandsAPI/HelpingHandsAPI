@@ -1,6 +1,7 @@
 package org.helpinghands.serviceinfo.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -8,7 +9,7 @@ import java.util.List;
 @Table( name = "ServiceProvider")
 public class ServiceProvider {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="ProviderID", updatable=false, nullable=false)
     private int ID;
 
@@ -39,24 +40,28 @@ public class ServiceProvider {
     @Column(name = "Verified")
     private boolean infoVerified;
 
-    @OneToMany(mappedBy = "serviceProvider", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "serviceProvider", fetch = FetchType.LAZY)
     @JoinColumn(name="ProviderID")
-    private List<Service> servicesProvided;
+    private List<ServiceGiven> servicesProvided = new ArrayList<>();
 
 
     public ServiceProvider() {
     }
 
-    public void addService(Service providerService) {
-        this.servicesProvided.add(providerService);
-        providerService.setServiceProvider(this);
+    public ServiceProvider(int ID) {
+        this.ID = ID;
     }
 
-    public List<Service> getServicesProvided() {
+    public void addService(ServiceGiven providerServiceGiven) {
+        this.servicesProvided.add(providerServiceGiven);
+        providerServiceGiven.setServiceProvider(this);
+    }
+
+    public List<ServiceGiven> getServicesProvided() {
         return servicesProvided;
     }
 
-    public void setServicesProvided(List<Service> servicesProvided) {
+    public void setServicesProvided(List<ServiceGiven> servicesProvided) {
         this.servicesProvided = servicesProvided;
     }
 
@@ -147,7 +152,7 @@ public class ServiceProvider {
         this.zip = zip;
     }
 
-//@OneToMany(targetEntity = Service.class, mappedBy = "serviceProvider",
+//@OneToMany(targetEntity = ServiceGiven.class, mappedBy = "serviceProvider",
 //    cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 //    public List<String> getServicesProvided() {
 //        return servicesProvided;
